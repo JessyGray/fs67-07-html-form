@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form name="registration" action="#">
+        <fieldset>
+            <legend>Personal data</legend>
+            <p>
+                <label for="fName">First Name:</label>
+                <input id="fName" name="firstName" type="text" placeholder="Peter">
+            </p>
+            <p>
+                <label>Last Name:
+                    <input id="lName" name="lastName" type="text" placeholder="Parker">
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                    <input name="email" type="Email" placeholder="peter.parker@example.com" required autofocus>
+                </label>
+            </p>
+            <p>
+                <label>Password:
+                    <input type="password" name="password">
+                </label>
+            </p>
+            <p>
+                Gender:
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Other
+                </label>
+            </p>
+            <p>
+                Hobbies:
+                <label>
+                    <input type="checkbox" name="chess">
+                    Chess
+                </label>
+                <label>
+                    <input type="checkbox" name="films">
+                    Films
+                </label>
+                <label>
+                    <input type="checkbox" name="books">
+                    Books
+                </label>
+            </p>
+            <p>
+                <label>Birthdate:
+                    <input type="date" name="birthdate">
+                </label>
+            </p>
+            <p>
+                <label>Languages:
+                    <select name="lang">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                        <option value="he">Hebrew</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Comment:
+                    <textarea name="comment" cols="30" rows="5"></textarea>
+                </label>
+                </p>
+        </fieldset>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+        <button type="button">Back</button>
+        <button type="button">Forward</button>
+    </form>
+</body>
+
+</html>
